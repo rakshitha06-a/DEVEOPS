@@ -1,0 +1,24 @@
+{
+  "name": "docker-web-service",
+  "version": "1.0.0",
+  "description": "Docker Web Service Management Dashboard — A college CBP project demonstrating Docker image and container management for web services.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node tests/health.test.js"
+  },
+  "keywords": [
+    "docker",
+    "containers",
+    "devops",
+    "web-service",
+    "express",
+    "dashboard"
+  ],
+  "author": "Raksh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

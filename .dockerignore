@@ -1,0 +1,47 @@
+# =============================================================================
+# .dockerignore — Files to Exclude from Docker Build Context
+# =============================================================================
+# When you run "docker build", Docker sends all files in the current directory
+# (the "build context") to the Docker Engine. This file tells Docker which
+# files to SKIP, making builds faster and images smaller.
+#
+# Think of it like .gitignore, but for Docker.
+# =============================================================================
+
+# Node.js dependencies — will be installed fresh inside the container
+node_modules
+
+# npm debug logs
+npm-debug.log*
+
+# Git version control files — not needed in the image
+.git
+.gitignore
+
+# Docker files — the image doesn't need its own build instructions
+Dockerfile
+docker-compose.yml
+compose.yaml
+.dockerignore
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS-generated files
+Thumbs.db
+.DS_Store
+
+# Test files — not needed in the production image
+tests/
+
+# Documentation — not needed in the production image
+README.md
+docs/
+
+# Environment files — may contain secrets
+.env
+.env.local
+.env.*.local

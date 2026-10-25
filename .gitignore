@@ -1,0 +1,24 @@
+# =============================================================================
+# .gitignore — Files to Exclude from Git Version Control
+# =============================================================================
+
+# Node.js dependencies
+node_modules/
+
+# npm debug logs
+npm-debug.log*
+
+# Environment files (may contain secrets)
+.env
+.env.local
+.env.*.local
+
+# OS-generated files
+Thumbs.db
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
